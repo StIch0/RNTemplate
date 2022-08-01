@@ -11,6 +11,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "prettier": "prettier --write \"./**/*.{ts,tsx}\"",
     "create-toolkit-dir": "./scripts/createToolkitDir.sh",
+    "preinstall": "git init .",
     "prepare": "husky install && npx husky add .husky/pre-commit \"yarn pretty-quick --staged && npx lint-staged && yarn tsc\""
   },
   "dependencies": {
