@@ -1,4 +1,4 @@
 module.exports = {
   placeholderName: 'RNTemplate',
-  templateDir: './',
+  templateDir: './template',
 };
