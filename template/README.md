@@ -10,32 +10,46 @@ yarn run ios
 yarn run android
 ```
 
-## Скрипты
+## Store
 
-Для создания директории и файлов Redux Tookit
+### Как работать со **стором**
 
-```shell script
-yarn run create-toolkit-dir
-```
+> #### Структура директории **store**
+>
+> - Директория **_[feature]_**
+>   > - actions.ts
+>   > - selectors.ts
+>   > - slice.ts
+>   > - types.ts
+> - Типы
+>   > - index.ts
+> - Enums
+>   > - index.ts
+
+### Старт работ
+
+Перед началом работы с redux, запускаем скрипт **scripts/createToolkitDir.sh** командой
+`sh scripts/createToolkitDir.sh`и указываем имя фичи.
+В директории **store** создается папка с указанным именем.
+
+**thunk'и** описываем в `action.ts` директории, а **actions** описываем в `slice.ts` и импортируем в `action.ts` и заново экспортируем. В дальнейшем импорт экшенов делаем именно из `action.ts` директории.
+
+Логику запросов к **апи** из санки выносим в отдельный сервис **app/services/[feature]/[featureName].ts**. После этого подключаем его к классу сервису. **app/services/[feature]/index.ts**
 
 ## Иерархия директории app
 
 ```
-|—— .DS_Store
 |—— common
-|    |—— .DS_Store
 |    |—— constants
 |        |—— mockDate.ts
 |    |—— types
 |        |—— index.ts
 |—— components
-|    |—— .DS_Store
 |    |—— Spinner
 |        |—— index.tsx
 |    |—— WIPComponent
 |        |—— index.tsx
 |—— navigation
-|    |—— .DS_Store
 |    |—— RootNavigation.tsx
 |    |—— services
 |        |—— getBaseStackOptions.ts
@@ -43,9 +57,7 @@ yarn run create-toolkit-dir
 |        |—— StackScreenOption.ts
 |        |—— StackTypes.ts
 |—— screens
-|    |—— .DS_Store
 |    |—— ExampleScreen
-|        |—— .DS_Store
 |        |—— componets
 |        |—— constants
 |        |—— index.tsx
@@ -53,9 +65,10 @@ yarn run create-toolkit-dir
 |        |—— types
 |            |—— index.ts
 |—— services
-|    |—— example.ts
+|    |—— example
+        |—— example.ts
+        |—— index.ts
 |—— store
-|    |—— .DS_Store
 |    |—— example
 |        |—— actions.ts
 |        |—— selectors.ts
@@ -65,7 +78,6 @@ yarn run create-toolkit-dir
 |    |—— types
 |        |—— index.ts
 |—— ui
-|    |—— .DS_Store
 |    |—— components
 |        |—— Button.tsx
 |        |—— Container.tsx
