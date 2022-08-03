@@ -10,15 +10,16 @@ yarn run ios
 yarn run android
 ```
 
-## Скрипты 
+## Скрипты
 
 Для создания директории и файлов Redux Tookit
 
 ```shell script
-yarn run create-toolkit-dir 
+yarn run create-toolkit-dir
 ```
 
-## Иерархия директории app 
+## Иерархия директории app
+
 ```
 |—— .DS_Store
 |—— common
@@ -31,7 +32,7 @@ yarn run create-toolkit-dir
 |    |—— .DS_Store
 |    |—— Spinner
 |        |—— index.tsx
-|    |—— WIPSComponent
+|    |—— WIPComponent
 |        |—— index.tsx
 |—— navigation
 |    |—— .DS_Store
@@ -75,4 +76,3 @@ yarn run create-toolkit-dir
 |    |—— types
 |        |—— index.ts
 ```
-

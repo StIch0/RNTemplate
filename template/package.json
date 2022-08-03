@@ -11,7 +11,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "prettier": "prettier --write \"./**/*.{ts,tsx}\"",
     "create-toolkit-dir": "./scripts/createToolkitDir.sh",
-    "prepare": "git init && rm -rf .husky && husky install && npx husky add .husky/pre-commit \"yarn pretty-quick --staged && npx lint-staged && yarn tsc\""
+    "prepare": "sh ./scripts/checkGitDirectory.sh"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.17.7",
