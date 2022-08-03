@@ -15,7 +15,7 @@ const RootNavigation = () => {
         name="ExampleScreen"
         component={ExampleScreen}
         options={getBaseStackScreenOptions({
-          customHeaderTitle: 'Тестовый экран',
+          customHeaderTitle: 'RNTemplate',
         })}
       />
     </RootStack.Navigator>

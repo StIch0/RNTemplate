@@ -1,6 +1,8 @@
+import { getSomeData } from './example';
+
 class Example {
   // методы для работы с api
-  getLog = () => {};
+  getSomeData = () => getSomeData()
 }
 
 const exampleServices = new Example();
