@@ -10,6 +10,58 @@ yarn run ios
 yarn run android
 ```
 
+## Иерархия директории app
+
+```
+📦app
+ ┣━ 📂common Директория для сущностей (константы, компоненты, типы и тд) используемые в более чем 1 месте
+ ┃ ┣━ 📂components
+ ┃ ┃ ┣━ 📂Spinner
+ ┃ ┃ ┃ ┗━ 📜index.tsx
+ ┃ ┃ ┗━ 📂WIPSComponent
+ ┃ ┃ ┃ ┗━ 📜index.tsx
+ ┃ ┣━ 📂constants
+ ┃ ┃ ┗━ 📜mockDate.ts
+ ┃ ┗━ 📂types
+ ┃ ┃ ┗━ 📜index.ts
+ ┣━ 📂navigation
+ ┃ ┣━ 📂services
+ ┃ ┃ ┗━ 📜getBaseStackOptions.ts
+ ┃ ┣━ 📂types
+ ┃ ┃ ┣━ 📜StackScreenOption.ts
+ ┃ ┃ ┗━ 📜StackTypes.ts
+ ┃ ┗━ 📜RootNavigation.tsx
+ ┣━ 📂screens
+ ┃ ┗━ 📂ExampleScreen
+ ┃ ┃ ┣━ 📂components
+ ┃ ┃ ┣━ 📂constants
+ ┃ ┃ ┣━ 📂services
+ ┃ ┃ ┣━ 📂types
+ ┃ ┃ ┃ ┗━ 📜index.ts
+ ┃ ┃ ┗━ 📜index.tsx
+ ┣━ 📂services
+ ┃ ┗━ 📜example.ts
+ ┣━ 📂store
+ ┃ ┣━ 📂example
+ ┃ ┃ ┣━ 📜actions.ts
+ ┃ ┃ ┣━ 📜selectors.ts
+ ┃ ┃ ┣━ 📜slice.ts
+ ┃ ┃ ┗━ 📜types.ts
+ ┃ ┣━ 📂types
+ ┃ ┃ ┗━ 📜index.ts
+ ┃ ┗━ 📜index.ts
+ ┗━ 📂ui
+ ┃ ┣━ 📂components
+ ┃ ┃ ┣━ 📜Button.tsx
+ ┃ ┃ ┣━ 📜Container.tsx
+ ┃ ┃ ┣━ 📜Input.tsx
+ ┃ ┃ ┗━ 📜Text.tsx
+ ┃ ┣━ 📂constants
+ ┃ ┃ ┗━ 📜index.ts
+ ┃ ┗━ 📂types
+ ┃ ┃ ┗━ 📜index.ts
+
+```
 ## Store
 
 ### Как работать со **стором**
@@ -36,55 +88,3 @@ yarn run android
 
 Логику запросов к **апи** из санки выносим в отдельный сервис **app/services/[feature]/[featureName].ts**. После этого подключаем его к классу сервису. **app/services/[feature]/index.ts**
 
-## Иерархия директории app
-
-```
-|—— common
-|    |—— constants
-|        |—— mockDate.ts
-|    |—— types
-|        |—— index.ts
-|—— components
-|    |—— Spinner
-|        |—— index.tsx
-|    |—— WIPComponent
-|        |—— index.tsx
-|—— navigation
-|    |—— RootNavigation.tsx
-|    |—— services
-|        |—— getBaseStackOptions.ts
-|    |—— types
-|        |—— StackScreenOption.ts
-|        |—— StackTypes.ts
-|—— screens
-|    |—— ExampleScreen
-|        |—— componets
-|        |—— constants
-|        |—— index.tsx
-|        |—— services
-|        |—— types
-|            |—— index.ts
-|—— services
-|    |—— example
-        |—— example.ts
-        |—— index.ts
-|—— store
-|    |—— example
-|        |—— actions.ts
-|        |—— selectors.ts
-|        |—— slice.ts
-|        |—— types.ts
-|    |—— index.ts
-|    |—— types
-|        |—— index.ts
-|—— ui
-|    |—— components
-|        |—— Button.tsx
-|        |—— Container.tsx
-|        |—— Input.tsx
-|        |—— Text.tsx
-|    |—— constants
-|        |—— index.ts
-|    |—— types
-|        |—— index.ts
-```
