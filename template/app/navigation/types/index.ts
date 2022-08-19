@@ -4,4 +4,8 @@ type BaseStackScreenOptions = {
   customHeaderTitle?: StackNavigationOptions['headerTitle'];
 };
 
-export type { BaseStackScreenOptions };
+type RootStackParamsList = {
+  ExampleScreen: undefined;
+};
+
+export type { RootStackParamsList, BaseStackScreenOptions };

@@ -1,6 +1,6 @@
 import type { StackNavigationOptions } from '@react-navigation/stack';
 
-import type { BaseStackScreenOptions } from '../types/StackScreenOption';
+import type { BaseStackScreenOptions } from '../types';
 
 const getBaseStackScreenOptions = ({
   customHeaderTitle,

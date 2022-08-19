@@ -26,7 +26,9 @@
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.json"
+    "project": "tsconfig.json",
+    "tsconfigRootDir": "./",
+    "sourceType": "module"
   },
   "rules": {
     "@typescript-eslint/await-thenable": ["error"],
