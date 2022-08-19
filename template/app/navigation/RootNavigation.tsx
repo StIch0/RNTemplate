@@ -4,7 +4,7 @@ import React from 'react';
 import { ExampleScreen } from '@app/screens/ExampleScreen';
 
 import { getBaseStackScreenOptions } from './services/getBaseStackOptions';
-import type { RootStackParamsList } from './types/StackTypes';
+import type { RootStackParamsList } from './types';
 
 const RootStack = createStackNavigator<RootStackParamsList>();
 

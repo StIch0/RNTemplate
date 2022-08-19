@@ -1,3 +1,3 @@
-const getSomeData = () => { };
+const getSomeData = () => {};
 
 export { getSomeData };
