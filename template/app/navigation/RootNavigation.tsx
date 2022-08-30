@@ -3,10 +3,20 @@ import React from 'react';
 
 import { ExampleScreen } from '@app/screens/ExampleScreen';
 
-import { getBaseStackScreenOptions } from './services/getBaseStackOptions';
+import { stackNavigatorOptionsService } from './services/StackNavigatorOptionsService';
 import type { RootStackParamsList } from './types';
 
 const RootStack = createStackNavigator<RootStackParamsList>();
+
+const exampleScreenOption = stackNavigatorOptionsService
+  .addTitle('RNTemplate')
+  .addHeaderCustom({
+    headerTitle: 'new RNTemplate',
+    headerTitleStyle: {
+      color: '#000000'
+    }
+  })
+  .addHeaderColor('#3fff').options;
 
 const RootNavigation = () => {
   return (
@@ -14,9 +24,7 @@ const RootNavigation = () => {
       <RootStack.Screen
         name="ExampleScreen"
         component={ExampleScreen}
-        options={getBaseStackScreenOptions({
-          customHeaderTitle: 'RNTemplate',
-        })}
+        options={exampleScreenOption}
       />
     </RootStack.Navigator>
   );
