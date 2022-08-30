@@ -8,8 +8,15 @@ import type { RootStackParamsList } from './types';
 
 const RootStack = createStackNavigator<RootStackParamsList>();
 
-const exampleScreenOption =
-  stackNavigatorOptionsService.addTitle('RNTemplate').options;
+const exampleScreenOption = stackNavigatorOptionsService
+  .addTitle('RNTemplate')
+  .addHeaderCustom({
+    headerTitle: 'new RNTemplate',
+    headerTitleStyle: {
+      color: '#000000'
+    }
+  })
+  .addHeaderColor('#3fff').options;
 
 const RootNavigation = () => {
   return (
