@@ -15,10 +15,13 @@
   "keywords": [],
   "files": [
     "template",
-    "template.config.js"
+    "template.config.js",
+    "git_init_script.sh"
   ],
   "bugs": {
     "url": "https://git.f7m.ru/examples/reactnativetemplate/-/issues"
   },
-  "homepage": "https://git.f7m.ru/examples/reactnativetemplate.git"
+  "homepage": "https://git.f7m.ru/examples/reactnativetemplate.git",
+  "devDependencies": {},
+  "dependencies": {}
 }
