@@ -33,13 +33,6 @@ type ThunkAsyncConfig = {
   dispatch: AppDispatch;
 };
 
-type RequestSendFeedback = {
-  phone: string;
-  email: string;
-  notifyByEmail: boolean;
-  msg: string;
-};
-
 type ThunkMiddlewareOptions = {
   thunk: {
     extraArgument: Dependencies;
@@ -64,7 +57,6 @@ export type {
   RootState,
   Dependencies,
   Middlewares,
-  RequestSendFeedback,
   Reducers,
   ThunkMiddlewareOptions,
 };
