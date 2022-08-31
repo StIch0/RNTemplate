@@ -18,7 +18,7 @@ const exampleScreenOption = stackNavigatorOptionsService
   })
   .addHeaderColor('#3fff').options;
 
-const RootNavigation = () => {
+const RootStackNavigator = () => {
   return (
     <RootStack.Navigator>
       <RootStack.Screen
@@ -30,4 +30,4 @@ const RootNavigation = () => {
   );
 };
 
-export { RootNavigation };
+export { RootStackNavigator };
