@@ -1,5 +1,7 @@
 import { listSelector } from './slice';
 
-export const allListSelector = listSelector.selectAll;
+const getAllList = listSelector.selectAll;
 
-export const listEntitiesSelector = listSelector.selectEntities;
+const getListEntities = listSelector.selectEntities;
+
+export { getListEntities, getAllList };

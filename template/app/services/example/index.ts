@@ -1,10 +1,10 @@
 import { getSomeData } from './example';
 
-class Example {
+class ExampleServices {
   // методы для работы с api
   getSomeData = () => getSomeData();
 }
 
-const exampleServices = new Example();
+const exampleServices = new ExampleServices();
 
 export { exampleServices };
