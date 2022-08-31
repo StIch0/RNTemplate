@@ -1,9 +1,9 @@
 import type { EntityState } from '@reduxjs/toolkit';
 
-import type { MockDate } from '@app/common/types';
+import type { MockData } from '@app/common/types';
 
 type ListState = {
-  suggestions: EntityState<MockDate>;
+  suggestions: EntityState<MockData>;
 };
 
 export type { ListState };

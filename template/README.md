@@ -21,7 +21,7 @@ yarn run android
  ┃ ┃ ┗━ 📂WIPSComponent
  ┃ ┃ ┃ ┗━ 📜index.tsx
  ┃ ┣━ 📂constants
- ┃ ┃ ┗━ 📜mockDate.ts
+ ┃ ┃ ┗━ 📜mockData.ts
  ┃ ┗━ 📂types
  ┃ ┃ ┗━ 📜index.ts
  ┣━ 📂navigation - Директория для сущностей навигации (stack/bottom/top навигаторы) и их типов и сервисов
@@ -113,7 +113,7 @@ yarn run android
 6. `addHeaderCustom({})` - принимает {}: StackNavigationOptions. Сбрасывает предыдущие настройки header и применяет только те, которые были переданы. Нужен для создания кастомного header'а.
 7. Чтобы получить {} options нужно вызвать `.options` в конце цепочки методов
 
-### Старт работ
+### Старт работ c Redux
 
 Перед началом работы с redux, запускаем скрипт **scripts/createToolkitDir.sh** командой
 `sh scripts/createToolkitDir.sh`и указываем имя фичи.
