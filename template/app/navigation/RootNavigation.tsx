@@ -13,8 +13,8 @@ const exampleScreenOption = stackNavigatorOptionsService
   .addHeaderCustom({
     headerTitle: 'new RNTemplate',
     headerTitleStyle: {
-      color: '#000000'
-    }
+      color: '#000000',
+    },
   })
   .addHeaderColor('#3fff').options;
 

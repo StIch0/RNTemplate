@@ -10,6 +10,7 @@
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "prettier": "prettier --write \"./**/*.{ts,tsx}\"",
+    "husky": "yarn pretty-quick --staged && npx lint-staged && yarn tsc",
     "create-toolkit-dir": "./scripts/createToolkitDir.sh",
     "prepare": "sh ./scripts/createHuskyConfig.sh"
   },
