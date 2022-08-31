@@ -10,7 +10,8 @@
   "license": "MIT",
   "main": "template.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "rm -rf .husky && npx husky install && npx husky add .husky/pre-commit \"cd ./template && yarn run husky\""
   },
   "keywords": [],
   "files": [
@@ -22,6 +23,7 @@
     "url": "https://git.f7m.ru/examples/reactnativetemplate/-/issues"
   },
   "homepage": "https://git.f7m.ru/examples/reactnativetemplate.git",
-  "devDependencies": {},
-  "dependencies": {}
+  "devDependencies": {
+    "husky": "^8.0.1"
+  }
 }
