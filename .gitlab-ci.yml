@@ -7,7 +7,9 @@ lint:
   stage: check
   script:
     - yarn install
-    - cd ./template && yarn run lint
+    - cd ./template 
+    - yarn install
+    - yarn run lint
   only:
     - dev
     - master
@@ -17,7 +19,9 @@ tsc:
   stage: check
   script:
     - yarn install
-    - cd ./template && yarn tsc
+    - cd ./template 
+    - yarn install
+    - yarn tsc
   only:
     - dev
     - master
