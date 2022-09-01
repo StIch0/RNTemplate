@@ -32,12 +32,18 @@ yarn run android
  ┃ ┣━ 📂types
  ┃ ┃ ┗━ 📜index.ts
  ┃ ┗━ 📜RootStackNavigator.tsx
- ┣━ 📂screens
- ┃ ┗━ 📂ExampleScreen
- ┃ ┃ ┣━ 📂types
- ┃ ┃ ┃ ┗━ 📜index.ts
- ┃ ┃ ┗━ 📜index.tsx
- ┣━ 📂services
+ ┣ 📂screens
+ ┃ ┗ 📂exampleScreen
+ ┃ ┃ ┣ 📂components
+ ┃ ┃ ┃ ┗ 📜ExampleView.tsx
+ ┃ ┃ ┣ 📂constants
+ ┃ ┃ ┃ ┗ 📜index.ts
+ ┃ ┃ ┣ 📂services
+ ┃ ┃ ┃ ┗ 📜index.ts
+ ┃ ┃ ┣ 📂types
+ ┃ ┃ ┃ ┗ 📜index.ts
+ ┃ ┃ ┗ 📜index.tsx
+ ┣ 📂services
  ┃ ┗━ 📂example
  ┃ ┃ ┣━ 📜example.ts
  ┃ ┃ ┗━ 📜index.ts
