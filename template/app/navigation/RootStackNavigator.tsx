@@ -1,7 +1,7 @@
 import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
 
-import { ExampleScreen } from '@app/screens/ExampleScreen';
+import { ExampleScreen } from '@app/screens/exampleScreen';
 
 import { stackNavigatorOptionsService } from './services/StackNavigatorOptionsService';
 import type { RootStackParamsList } from './types';
