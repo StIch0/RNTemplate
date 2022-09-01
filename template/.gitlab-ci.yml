@@ -6,7 +6,7 @@ stages:
 lint:
   stage: check
   script:
-    - yarn install --frozen-lockfile
+    - yarn install
     - yarn run lint
   only:
     - dev
@@ -16,7 +16,7 @@ lint:
 tsc:
   stage: check
   script:
-    - yarn install --frozen-lockfile
+    - yarn install
     - yarn tsc
   only:
     - dev
