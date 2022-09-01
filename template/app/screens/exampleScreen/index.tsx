@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { ExampleView } from './components/ExampleView';
+
 const ExampleScreen = () => {
-  return <></>;
+  return <ExampleView />;
 };
 
 export { ExampleScreen };
