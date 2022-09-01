@@ -1,4 +1,4 @@
-image: reactnativecommunity/react-native-android:5.1
+image: registry.git.f7m.ru/examples/reactnativetemplate/reactnative:latest
 
 stages:
   - check
