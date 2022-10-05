@@ -4,9 +4,9 @@
   "description": "React Native Template",
   "repository": {
     "type": "git",
-    "url": "https://git.f7m.ru/examples/reactnativetemplate.git"
+    "url": "https://github.com/StIch0/RNTemplate.git"
   },
-  "author": "dev@fogstream.ru",
+  "author": "StIch",
   "license": "MIT",
   "main": "template.config.js",
   "scripts": {
@@ -20,9 +20,9 @@
     "git_init_script.sh"
   ],
   "bugs": {
-    "url": "https://git.f7m.ru/examples/reactnativetemplate/-/issues"
+    "url": "https://github.com/StIch0/RNTemplate/-/issues"
   },
-  "homepage": "https://git.f7m.ru/examples/reactnativetemplate.git",
+  "homepage": "https://github.com/StIch0/RNTemplate.git",
   "devDependencies": {
     "husky": "^8.0.1"
   }
