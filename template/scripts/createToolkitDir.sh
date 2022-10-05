@@ -1,4 +1,4 @@
-cd ../app/store
+cd ./app/store
 echo "Enter toolkit directory name : "
 read directoryName
 mkdir $directoryName
