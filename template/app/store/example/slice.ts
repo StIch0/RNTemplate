@@ -2,7 +2,7 @@ import { createEntityAdapter, createSlice } from '@reduxjs/toolkit';
 
 import type { MockData } from '@app/common/types';
 
-import type { PayloadAction, RootState } from '../types';
+import type { PayloadAction } from '../types';
 import { SlicesName } from '../types';
 
 import type { ListState } from './types';
@@ -12,10 +12,6 @@ export const selectId = ({ id }: { id: string }) => id;
 const suggestionsAdapter = createEntityAdapter<MockData>({
   selectId,
 });
-
-export const listSelector = suggestionsAdapter.getSelectors<RootState>(
-  ({ list }) => list.suggestions,
-);
 
 const initialState: ListState = {
   suggestions: suggestionsAdapter.getInitialState(),
@@ -35,3 +31,5 @@ export const {
   actions: { setListSuggestion },
   reducer: listReducer,
 } = slice;
+
+export { suggestionsAdapter };

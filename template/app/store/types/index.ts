@@ -12,6 +12,7 @@ import type { PersistPartial } from 'redux-persist/lib/persistReducer';
 import type { exampleServices } from '@app/services/example';
 
 import type { ListState } from '../example/types';
+import type { ThemeState } from '../theme/types';
 
 type PayloadAction<T> = ReduxPayloadAction<T>;
 
@@ -23,6 +24,7 @@ type Dependencies = {
 
 type RootState = {
   list: ListState;
+  theme: ThemeState;
 } & PersistPartial;
 
 type AppDispatch = Dispatch & ThunkDispatch<RootState, Dependencies, AnyAction>;
@@ -47,6 +49,7 @@ type Reducers = { [K in keyof MainState]: Reducer<MainState[K], AnyAction> };
 
 enum SlicesName {
   LIST = 'LIST',
+  THEME = 'THEME',
 }
 
 export { SlicesName };
@@ -59,4 +62,5 @@ export type {
   Middlewares,
   Reducers,
   ThunkMiddlewareOptions,
+  AppDispatch,
 };

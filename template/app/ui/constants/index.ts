@@ -31,4 +31,11 @@ const font: Font = {
   },
 };
 
-export { font };
+const colorScheme = {
+  primary: '#ABFEBF',
+  secondary: '#AAFFEE',
+  black: '#000000',
+  white: '#FFFFFF',
+};
+
+export { font, colorScheme };
