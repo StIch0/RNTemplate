@@ -1,4 +1,10 @@
-import { listSelector } from './slice';
+import type { RootState } from '../types';
+
+import { suggestionsAdapter } from './slice';
+
+export const listSelector = suggestionsAdapter.getSelectors<RootState>(
+  ({ list }) => list.suggestions,
+);
 
 const getAllList = listSelector.selectAll;
 

@@ -14,6 +14,7 @@ import type {
 } from '@app/store/types';
 
 import { listReducer } from './example/slice';
+import { themeReducer } from './theme/slice';
 
 const devTools = Config.API_URL === '';
 
@@ -23,6 +24,7 @@ const dependencies: Dependencies = {
 
 const reducers: Reducers = {
   list: listReducer,
+  theme: themeReducer,
 };
 
 const persistConfig = {

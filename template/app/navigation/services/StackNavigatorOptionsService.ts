@@ -1,16 +1,44 @@
-import type { StackNavigationOptions } from '@react-navigation/stack';
+import type { NativeStackNavigationOptions } from '@react-navigation/native-stack';
 
 import { baseNavigationOptions } from '../constants';
-import type { HeaderLeft, HeaderRight, HeaderTitleOptions } from '../types';
-
+import type {
+  HeaderBackTitleOptions,
+  HeaderLeft,
+  HeaderRight,
+  HeaderTitleOptions,
+} from '../types';
 class StackNavigatorOptionsService {
-  private navigationOptions: StackNavigationOptions;
+  private navigationOptions: NativeStackNavigationOptions;
 
   constructor(newOptions = baseNavigationOptions) {
-    this.navigationOptions = newOptions;
+    this.navigationOptions = newOptions as NativeStackNavigationOptions;
   }
 
-  addTitle(title: string, titleOptions?: HeaderTitleOptions) {
+  addDefaultOptions(options: NativeStackNavigationOptions) {
+    return this.merge(options);
+  }
+
+  addTitle(
+    title: string,
+    titleOptions?: HeaderTitleOptions<NativeStackNavigationOptions>,
+  ) {
+    return this.merge({ headerTitle: title, ...titleOptions });
+  }
+
+  addBackTitle(
+    title: string,
+    backTitleOptions?: HeaderBackTitleOptions<NativeStackNavigationOptions>,
+  ) {
+    return this.merge({
+      headerBackTitle: title,
+      ...backTitleOptions,
+    });
+  }
+
+  addLargeTitle(
+    title: string,
+    titleOptions?: HeaderTitleOptions<NativeStackNavigationOptions>,
+  ) {
     return this.merge({ headerTitle: title, ...titleOptions });
   }
 
@@ -18,11 +46,11 @@ class StackNavigatorOptionsService {
     return this.merge({ headerStyle: { backgroundColor } });
   }
 
-  addHeaderLeft(headerLeft: HeaderLeft) {
+  addHeaderLeft(headerLeft: HeaderLeft<NativeStackNavigationOptions>) {
     return this.merge({ headerLeft });
   }
 
-  addHeaderRight(headerRight: HeaderRight) {
+  addHeaderRight(headerRight: HeaderRight<NativeStackNavigationOptions>) {
     return this.merge({ headerRight });
   }
 
@@ -30,11 +58,31 @@ class StackNavigatorOptionsService {
     return this.merge({ headerShown });
   }
 
-  addHeaderCustom(header: StackNavigationOptions) {
+  addHeaderCustom(header: NativeStackNavigationOptions) {
     return new StackNavigatorOptionsService(header);
   }
 
-  private merge(newOption: StackNavigationOptions) {
+  hideBackParams() {
+    return this.merge({
+      headerBackTitleVisible: false,
+      headerBackVisible: false,
+    });
+  }
+
+  hideShadow() {
+    return this.merge({
+      headerShadowVisible: false,
+      headerLargeTitleShadowVisible: false,
+    });
+  }
+
+  showShadow() {
+    return this.merge({
+      headerShadowVisible: true,
+    });
+  }
+
+  private merge(newOption: NativeStackNavigationOptions) {
     return new StackNavigatorOptionsService({
       ...this.navigationOptions,
       ...newOption,
