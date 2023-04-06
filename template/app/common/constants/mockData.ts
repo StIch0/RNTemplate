@@ -1,4 +1,4 @@
-import type { MockData } from '../types';
+import type { MockDataItem } from '@app/store/example/types';
 
 const mockText: string[] = [
   '“Магии не место в науке” - не используй магические константы',
@@ -17,7 +17,7 @@ const mockText: string[] = [
   '“Can’t catch this” - обрабатывай исключения',
 ];
 
-const mockList: MockData[] = Array.from(
+const mockList: MockDataItem[] = Array.from(
   { length: mockText.length },
   (_, k) => ({
     id: `${k}_${Date.now()}`,

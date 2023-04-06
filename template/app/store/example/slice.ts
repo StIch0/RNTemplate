@@ -1,15 +1,14 @@
 import { createEntityAdapter, createSlice } from '@reduxjs/toolkit';
 
-import type { MockData } from '@app/common/types';
-
 import type { PayloadAction } from '../types';
 import { SlicesName } from '../types';
 
-import type { ListState } from './types';
+import { getSuggestionsAction } from './actions';
+import type { ListState, MockDataItem } from './types';
 
 export const selectId = ({ id }: { id: string }) => id;
 
-const suggestionsAdapter = createEntityAdapter<MockData>({
+const suggestionsAdapter = createEntityAdapter<MockDataItem>({
   selectId,
 });
 
@@ -21,9 +20,14 @@ const slice = createSlice({
   initialState,
   name: SlicesName.LIST,
   reducers: {
-    setListSuggestion: (state, { payload }: PayloadAction<MockData[]>) => {
+    setListSuggestion: (state, { payload }: PayloadAction<MockDataItem[]>) => {
       suggestionsAdapter.addMany(state.suggestions, payload);
     },
+  },
+  extraReducers(builder) {
+    builder.addCase(getSuggestionsAction.fulfilled, (state, { payload }) => {
+      suggestionsAdapter.addMany(state.suggestions, payload);
+    });
   },
 });
 

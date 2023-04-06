@@ -1,13 +1,19 @@
+import { selectById } from '../helpers/selectById';
+import { useAppSelector } from '../hooks';
 import type { RootState } from '../types';
 
 import { suggestionsAdapter } from './slice';
+import type { MockDataItem } from './types';
 
-export const listSelector = suggestionsAdapter.getSelectors<RootState>(
-  ({ list }) => list.suggestions,
+export const selector = suggestionsAdapter.getSelectors<RootState>(
+  ({ list: { suggestions } }) => suggestions,
 );
 
-const getAllList = listSelector.selectAll;
+const useSuggestionsTotal = () => useAppSelector(selector.selectTotal);
 
-const getListEntities = listSelector.selectEntities;
+const useSuggestionsIds = () => useAppSelector(selector.selectIds);
 
-export { getListEntities, getAllList };
+const useSuggestionsById = (id: number) =>
+  useAppSelector(selectById<MockDataItem>(id)(selector));
+
+export { useSuggestionsById, useSuggestionsTotal, useSuggestionsIds };

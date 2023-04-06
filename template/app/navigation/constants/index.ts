@@ -1,6 +1,6 @@
-import type { StackNavigationOptions } from '@react-navigation/stack';
+import type { NativeStackNavigationOptions } from '@react-navigation/native-stack';
 
-const baseNavigationOptions: StackNavigationOptions = {
+const baseNavigationOptions: NativeStackNavigationOptions = {
   headerTintColor: '#000000',
   headerTitleAlign: 'center' as const,
 };
