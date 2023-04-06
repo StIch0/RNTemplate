@@ -1,9 +1,13 @@
 import type { EntityState } from '@reduxjs/toolkit';
 
-import type { MockData } from '@app/common/types';
-
-type ListState = {
-  suggestions: EntityState<MockData>;
+type MockDataItem = {
+  id: string;
+  text: string;
+  completed: boolean;
 };
 
-export type { ListState };
+type ListState = {
+  suggestions: EntityState<MockDataItem>;
+};
+
+export type { ListState, MockDataItem };
