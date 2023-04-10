@@ -1,15 +1,17 @@
 import React from 'react';
-import { ActivityIndicator, Dimensions, StyleSheet } from 'react-native';
+import {
+  ActivityIndicator,
+  ActivityIndicatorProps,
+  StyleSheet,
+} from 'react-native';
 
-interface OwnProps {
-  size?: number | 'small' | 'large' | undefined;
-}
+type OwnProps = ActivityIndicatorProps;
 
-const { width } = Dimensions.get('window');
-
-function Spinner({ size }: OwnProps) {
-  return <ActivityIndicator size={size} style={styles.container} />;
-}
+const Spinner = (props: OwnProps) => {
+  return (
+    <ActivityIndicator {...props} style={[styles.container, props.style]} />
+  );
+};
 
 export { Spinner };
 
@@ -18,6 +20,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent',
     alignSelf: 'center',
     flex: 1,
-    width,
+    width: '100%',
   },
 });

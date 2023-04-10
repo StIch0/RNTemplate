@@ -1,4 +1,4 @@
-import { mockList } from '@app/common/constants/mockData';
+import { mockList } from '@app/common/constants';
 
 const getSomeData = async () => {
   try {

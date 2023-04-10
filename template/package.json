@@ -15,6 +15,7 @@
     "create-toolkit-dir": "./scripts/createToolkitDir.sh",
     "prepare": "sh ./scripts/createHuskyConfig.sh",
     "postinstall": "npx pod-install && patch-package",
+    "pod-install": "RCT_NEW_ARCH_ENABLED=1 bundle exec pod install",
     "android:assembleRelease": "cd ./android && ./gradlew clean && ./gradlew assembleRelease && open ./app/build/outputs/apk",
     "android:bundleRelease": "cd ./android && ./gradlew clean && ./gradlew bundleRelease && open ./app/build/outputs/bundle"
   },
@@ -28,7 +29,7 @@
     "patch-package": "^6.5.1",
     "postinstall-postinstall": "^2.1.0",
     "react": "18.2.0",
-    "react-native": "0.71.5",
+    "react-native": "0.71.6",
     "react-native-config": "^1.5.0",
     "react-native-gesture-handler": "^2.9.0",
     "react-native-keyboard-aware-scroll-view": "^0.9.5",
@@ -43,10 +44,6 @@
     "*.{ts,tsx,js,jsx}": [
       "eslint"
     ]
-  },
-  "resolutions": {
-    "@types/react": "18.0.5",
-    "immer": "9.0.14"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",
