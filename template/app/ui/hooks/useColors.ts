@@ -7,7 +7,7 @@ import { colorScheme } from '../constants';
 const useColors = () => {
   const scheme = useColorsScheme() || 'light';
 
-  const isLight = scheme === 'dark';
+  const isLight = scheme === 'light';
 
   const { black, primary, secondary, white } = colorScheme;
 
