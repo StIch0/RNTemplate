@@ -7,7 +7,7 @@ type MockDataItem = {
 };
 
 type ListState = {
-  suggestions: EntityState<MockDataItem>;
+  suggestions: EntityState<MockDataItem, string>;
 };
 
 export type { ListState, MockDataItem };

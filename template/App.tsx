@@ -1,6 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
-import { SafeAreaView } from 'react-native';
+import { SafeAreaView, StyleSheet } from 'react-native';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 
@@ -11,16 +12,24 @@ import { Container } from '@app/ui/components/Container';
 
 const App = () => {
   return (
-    <PersistGate loading={<Spinner />} persistor={persistor}>
-      <Provider store={store}>
-        <NavigationContainer>
-          <Container component={SafeAreaView}>
-            <RootStackNavigator />
-          </Container>
-        </NavigationContainer>
-      </Provider>
-    </PersistGate>
+    <GestureHandlerRootView style={styles.container}>
+      <PersistGate loading={<Spinner />} persistor={persistor}>
+        <Provider store={store}>
+          <NavigationContainer>
+            <Container component={SafeAreaView}>
+              <RootStackNavigator />
+            </Container>
+          </NavigationContainer>
+        </Provider>
+      </PersistGate>
+    </GestureHandlerRootView>
   );
 };
 
 export { App };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});

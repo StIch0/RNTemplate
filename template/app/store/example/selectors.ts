@@ -13,7 +13,7 @@ const useSuggestionsTotal = () => useAppSelector(selector.selectTotal);
 
 const useSuggestionsIds = () => useAppSelector(selector.selectIds);
 
-const useSuggestionsById = (id: number) =>
-  useAppSelector(selectById<MockDataItem>(id)(selector));
+const useSuggestionsById = (id: string) =>
+  useAppSelector(selectById<MockDataItem, string>(id)(selector));
 
 export { useSuggestionsById, useSuggestionsTotal, useSuggestionsIds };

@@ -5,6 +5,7 @@ import type {
   Reducer,
   SliceCaseReducers,
   ThunkDispatch,
+  Tuple,
 } from '@reduxjs/toolkit';
 import type { ThunkMiddlewareFor } from '@reduxjs/toolkit/dist/getDefaultMiddleware';
 import type { PersistPartial } from 'redux-persist/lib/persistReducer';
@@ -41,7 +42,9 @@ type ThunkMiddlewareOptions = {
   };
 };
 
-type Middlewares = ThunkMiddlewareFor<RootState, ThunkMiddlewareOptions>[];
+type Middlewares = Tuple<
+  ThunkMiddlewareFor<RootState, ThunkMiddlewareOptions>[]
+>;
 
 type MainState = Omit<RootState, '_persist'>;
 

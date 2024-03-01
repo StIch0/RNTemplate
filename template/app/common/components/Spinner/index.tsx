@@ -1,9 +1,6 @@
 import React from 'react';
-import {
-  ActivityIndicator,
-  ActivityIndicatorProps,
-  StyleSheet,
-} from 'react-native';
+import type { ActivityIndicatorProps } from 'react-native';
+import { ActivityIndicator, StyleSheet } from 'react-native';
 
 type OwnProps = ActivityIndicatorProps;
 

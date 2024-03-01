@@ -6,11 +6,7 @@ import { SlicesName } from '../types';
 import { getSuggestionsAction } from './actions';
 import type { ListState, MockDataItem } from './types';
 
-export const selectId = ({ id }: { id: string }) => id;
-
-const suggestionsAdapter = createEntityAdapter<MockDataItem>({
-  selectId,
-});
+const suggestionsAdapter = createEntityAdapter<MockDataItem>({});
 
 const initialState: ListState = {
   suggestions: suggestionsAdapter.getInitialState(),

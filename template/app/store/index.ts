@@ -1,5 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import type { AnyAction } from '@reduxjs/toolkit';
+import type { UnknownAction } from '@reduxjs/toolkit';
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import Config from 'react-native-config';
 import { persistStore } from 'redux-persist';
@@ -38,7 +38,7 @@ const rootReducer = combineReducers(reducers);
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
-const store = configureStore<RootState, AnyAction, Middlewares>({
+const store = configureStore<RootState, UnknownAction, Middlewares>({
   reducer: persistedReducer,
   devTools,
   middleware: (getDefaultMiddleware) =>

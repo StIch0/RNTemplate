@@ -13,7 +13,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		1646ED089EF346D691F831F7 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33004B21C25447F4BEF748A3 /* Roboto-MediumItalic.ttf */; };
 		200DA8F91CB9432E8B4525BF /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1212CCA3218847C1A5AB5D5D /* Roboto-Black.ttf */; };
-		490D4C1A355E74A3A118057B /* libPods-RNTemplate-RNTemplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E9CABC099943AAA2BA1F79 /* libPods-RNTemplate-RNTemplateTests.a */; };
+		28B5DC138254E2E6ED404DC9 /* libPods-RNTemplate-RNTemplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D63EC55561AFE41531A3B3 /* libPods-RNTemplate-RNTemplateTests.a */; };
 		498D62DB257D442EB6BAC40B /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83AE061407B44593ABD0D3AF /* Roboto-Italic.ttf */; };
 		4C029649D7A44621BAE1E754 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BB6172ABA684E3A957A4D51 /* Roboto-BoldItalic.ttf */; };
 		732E928CCB8B4FECA2A3F259 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F5319102E154D2CB2B7D9AA /* Roboto-Light.ttf */; };
@@ -21,11 +21,11 @@
 		7C426787B0084EE3832E79B7 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6FDD3D639A8F469E93FE160D /* Roboto-LightItalic.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		89C90168750741FC84D91E68 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8BF394761AF414CAE204D2E /* Roboto-Thin.ttf */; };
+		96E1E2D9F81EC9C556F2F8BB /* libPods-RNTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19CF6922EB2FD06EC8693227 /* libPods-RNTemplate.a */; };
 		A43C5187EF1B4DD687355C2C /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F080786CAC04381A91252C3 /* Roboto-Medium.ttf */; };
 		AB99E786442D48D893A4E863 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 606B010052EA49D1BA195880 /* Roboto-Regular.ttf */; };
 		AF0D2A1D558A459993D21A71 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 177B8AC824FB477BAA7B6C14 /* Roboto-BlackItalic.ttf */; };
 		C101FD145E5C440381B6CBDB /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9EA2E056671541848998613D /* Roboto-ThinItalic.ttf */; };
-		D74631F4ED2CCE1F68E53C00 /* libPods-RNTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D176478DAEF559C931F484 /* libPods-RNTemplate.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,6 @@
 		00E356EE1AD99517003FC87E /* RNTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* RNTemplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNTemplateTests.m; sourceTree = "<group>"; };
-		0B9D8A44A03B4DCCB0092151 /* Pods-RNTemplate-RNTemplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNTemplate-RNTemplateTests.debug.xcconfig"; path = "Target Support Files/Pods-RNTemplate-RNTemplateTests/Pods-RNTemplate-RNTemplateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0C2A5C19D471490689D859A1 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		1212CCA3218847C1A5AB5D5D /* Roboto-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Black.ttf"; path = "../assets/fonts/Roboto-Black.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* RNTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,21 +51,22 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RNTemplate/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RNTemplate/main.m; sourceTree = "<group>"; };
 		177B8AC824FB477BAA7B6C14 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BlackItalic.ttf"; path = "../assets/fonts/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		19CF6922EB2FD06EC8693227 /* libPods-RNTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNTemplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F080786CAC04381A91252C3 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		33004B21C25447F4BEF748A3 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-MediumItalic.ttf"; path = "../assets/fonts/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
-		36D176478DAEF559C931F484 /* libPods-RNTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNTemplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5319102E154D2CB2B7D9AA /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
-		43E9CABC099943AAA2BA1F79 /* libPods-RNTemplate-RNTemplateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNTemplate-RNTemplateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4768AD7B0A31BDBDAABCCA7E /* Pods-RNTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNTemplate.release.xcconfig"; path = "Target Support Files/Pods-RNTemplate/Pods-RNTemplate.release.xcconfig"; sourceTree = "<group>"; };
+		5FAA0D93DD66D3F2B74A2F61 /* Pods-RNTemplate-RNTemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNTemplate-RNTemplateTests.release.xcconfig"; path = "Target Support Files/Pods-RNTemplate-RNTemplateTests/Pods-RNTemplate-RNTemplateTests.release.xcconfig"; sourceTree = "<group>"; };
 		606B010052EA49D1BA195880 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		6FDD3D639A8F469E93FE160D /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-LightItalic.ttf"; path = "../assets/fonts/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RNTemplate/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83AE061407B44593ABD0D3AF /* Roboto-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Italic.ttf"; path = "../assets/fonts/Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		93D63EC55561AFE41531A3B3 /* libPods-RNTemplate-RNTemplateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNTemplate-RNTemplateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB6172ABA684E3A957A4D51 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BoldItalic.ttf"; path = "../assets/fonts/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
 		9EA2E056671541848998613D /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-ThinItalic.ttf"; path = "../assets/fonts/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		A8BF394761AF414CAE204D2E /* Roboto-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Thin.ttf"; path = "../assets/fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; };
-		AB7F8CFCD2DA55E3811C61C0 /* Pods-RNTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNTemplate.debug.xcconfig"; path = "Target Support Files/Pods-RNTemplate/Pods-RNTemplate.debug.xcconfig"; sourceTree = "<group>"; };
-		E30A70D53D0C3B80880055C3 /* Pods-RNTemplate-RNTemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNTemplate-RNTemplateTests.release.xcconfig"; path = "Target Support Files/Pods-RNTemplate-RNTemplateTests/Pods-RNTemplate-RNTemplateTests.release.xcconfig"; sourceTree = "<group>"; };
-		E5AD40319EE56134D81DA382 /* Pods-RNTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNTemplate.release.xcconfig"; path = "Target Support Files/Pods-RNTemplate/Pods-RNTemplate.release.xcconfig"; sourceTree = "<group>"; };
+		B00BB342D6F068D312F54282 /* Pods-RNTemplate-RNTemplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNTemplate-RNTemplateTests.debug.xcconfig"; path = "Target Support Files/Pods-RNTemplate-RNTemplateTests/Pods-RNTemplate-RNTemplateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B7D630930DEBFAD0B7FFDA2D /* Pods-RNTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNTemplate.debug.xcconfig"; path = "Target Support Files/Pods-RNTemplate/Pods-RNTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -75,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				490D4C1A355E74A3A118057B /* libPods-RNTemplate-RNTemplateTests.a in Frameworks */,
+				28B5DC138254E2E6ED404DC9 /* libPods-RNTemplate-RNTemplateTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D74631F4ED2CCE1F68E53C00 /* libPods-RNTemplate.a in Frameworks */,
+				96E1E2D9F81EC9C556F2F8BB /* libPods-RNTemplate.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,8 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				36D176478DAEF559C931F484 /* libPods-RNTemplate.a */,
-				43E9CABC099943AAA2BA1F79 /* libPods-RNTemplate-RNTemplateTests.a */,
+				19CF6922EB2FD06EC8693227 /* libPods-RNTemplate.a */,
+				93D63EC55561AFE41531A3B3 /* libPods-RNTemplate-RNTemplateTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -185,10 +185,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AB7F8CFCD2DA55E3811C61C0 /* Pods-RNTemplate.debug.xcconfig */,
-				E5AD40319EE56134D81DA382 /* Pods-RNTemplate.release.xcconfig */,
-				0B9D8A44A03B4DCCB0092151 /* Pods-RNTemplate-RNTemplateTests.debug.xcconfig */,
-				E30A70D53D0C3B80880055C3 /* Pods-RNTemplate-RNTemplateTests.release.xcconfig */,
+				B7D630930DEBFAD0B7FFDA2D /* Pods-RNTemplate.debug.xcconfig */,
+				4768AD7B0A31BDBDAABCCA7E /* Pods-RNTemplate.release.xcconfig */,
+				B00BB342D6F068D312F54282 /* Pods-RNTemplate-RNTemplateTests.debug.xcconfig */,
+				5FAA0D93DD66D3F2B74A2F61 /* Pods-RNTemplate-RNTemplateTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -200,12 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RNTemplateTests" */;
 			buildPhases = (
-				98FE6911DFACEE0C12554E49 /* [CP] Check Pods Manifest.lock */,
+				0DC7EB19C1F188802FFD52D8 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				54B1AFCEA8114A4D431AC971 /* [CP] Embed Pods Frameworks */,
-				4701132A9CF0BC42E773B268 /* [CP] Copy Pods Resources */,
+				807F36C543D8AF1F247A3A5A /* [CP] Embed Pods Frameworks */,
+				D64AA08C83342254CE1350A8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,14 +221,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RNTemplate" */;
 			buildPhases = (
-				27588D973E15114926D4D6F0 /* [CP] Check Pods Manifest.lock */,
+				6C4613486FF935F398649286 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				0DE9A6B7ACE8162FC5BD39FA /* [CP] Embed Pods Frameworks */,
-				654453E16859B88A9B953184 /* [CP] Copy Pods Resources */,
+				3FB8F78617F369C2F6EDEED3 /* [CP] Embed Pods Frameworks */,
+				5F8A1DE81E06D0DDA96446D3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -323,7 +323,29 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		0DE9A6B7ACE8162FC5BD39FA /* [CP] Embed Pods Frameworks */ = {
+		0DC7EB19C1F188802FFD52D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNTemplate-RNTemplateTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FB8F78617F369C2F6EDEED3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -340,7 +362,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNTemplate/Pods-RNTemplate-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		27588D973E15114926D4D6F0 /* [CP] Check Pods Manifest.lock */ = {
+		5F8A1DE81E06D0DDA96446D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNTemplate/Pods-RNTemplate-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNTemplate/Pods-RNTemplate-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNTemplate/Pods-RNTemplate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C4613486FF935F398649286 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -362,24 +401,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4701132A9CF0BC42E773B268 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNTemplate-RNTemplateTests/Pods-RNTemplate-RNTemplateTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNTemplate-RNTemplateTests/Pods-RNTemplate-RNTemplateTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNTemplate-RNTemplateTests/Pods-RNTemplate-RNTemplateTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		54B1AFCEA8114A4D431AC971 /* [CP] Embed Pods Frameworks */ = {
+		807F36C543D8AF1F247A3A5A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -396,43 +418,21 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNTemplate-RNTemplateTests/Pods-RNTemplate-RNTemplateTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		654453E16859B88A9B953184 /* [CP] Copy Pods Resources */ = {
+		D64AA08C83342254CE1350A8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNTemplate/Pods-RNTemplate-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RNTemplate-RNTemplateTests/Pods-RNTemplate-RNTemplateTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNTemplate/Pods-RNTemplate-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RNTemplate-RNTemplateTests/Pods-RNTemplate-RNTemplateTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNTemplate/Pods-RNTemplate-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		98FE6911DFACEE0C12554E49 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RNTemplate-RNTemplateTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNTemplate-RNTemplateTests/Pods-RNTemplate-RNTemplateTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -487,7 +487,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B9D8A44A03B4DCCB0092151 /* Pods-RNTemplate-RNTemplateTests.debug.xcconfig */;
+			baseConfigurationReference = B00BB342D6F068D312F54282 /* Pods-RNTemplate-RNTemplateTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -514,7 +514,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E30A70D53D0C3B80880055C3 /* Pods-RNTemplate-RNTemplateTests.release.xcconfig */;
+			baseConfigurationReference = 5FAA0D93DD66D3F2B74A2F61 /* Pods-RNTemplate-RNTemplateTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -538,7 +538,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB7F8CFCD2DA55E3811C61C0 /* Pods-RNTemplate.debug.xcconfig */;
+			baseConfigurationReference = B7D630930DEBFAD0B7FFDA2D /* Pods-RNTemplate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -564,7 +564,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5AD40319EE56134D81DA382 /* Pods-RNTemplate.release.xcconfig */;
+			baseConfigurationReference = 4768AD7B0A31BDBDAABCCA7E /* Pods-RNTemplate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -591,7 +591,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -647,14 +647,20 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -663,7 +669,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -711,14 +717,20 @@
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

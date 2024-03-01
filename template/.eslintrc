@@ -49,7 +49,7 @@
     "react-hooks/exhaustive-deps": "off",
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
-    "react/destructuring-assignment": "warn",
+    "react/destructuring-assignment": 0,
     "import/no-default-export": "error",
     "import/no-anonymous-default-export": "error",
     "import/prefer-default-export": "off", // default imports is evil
