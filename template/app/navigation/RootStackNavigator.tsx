@@ -5,23 +5,19 @@ import { useColorScheme } from '@app/common/hooks/useColorScheme';
 import { ExampleScreen } from '@app/screens/exampleScreen';
 import { useColors } from '@app/ui/hooks/useColors';
 
-import { stackNavigatorOptionsService } from './services/StackNavigatorOptionsService';
 import type { RootStackParamsList } from './types';
 
 const RootStack = createNativeStackNavigator<RootStackParamsList>();
 
 const RootStackNavigator = () => {
-  const { black, primary } = useColors();
+  const { black } = useColors();
 
-  const exampleScreenOption = stackNavigatorOptionsService
-    .addTitle('RNTemplate')
-    .addHeaderCustom({
-      headerTitle: 'new RNTemplate',
-      headerTitleStyle: {
-        color: black,
-      },
-    })
-    .addHeaderColor(primary).options;
+  const exampleScreenOption = {
+    title: 'RNTemplate',
+    headerTitleStyle: {
+      color: black,
+    },
+  };
 
   useColorScheme();
 

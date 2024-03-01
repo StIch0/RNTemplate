@@ -5,7 +5,7 @@ import type { RootStackParamsList } from '../types';
 
 const useStackNavigation = <
   T extends Partial<RootStackParamsList>,
-  R extends keyof RootStackParamsList = never,
+  R extends keyof T,
 >() => useNavigation<NativeStackNavigationProp<T, R>>();
 
 export { useStackNavigation };
