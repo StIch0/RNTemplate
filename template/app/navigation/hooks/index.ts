@@ -1,11 +1,11 @@
-import { useNavigation } from '@react-navigation/native';
-import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { useNavigation } from '@react-navigation/native'
+import type { NativeStackNavigationProp } from '@react-navigation/native-stack'
 
-import type { RootStackParamsList } from '../types';
+import type { RootStackParamsList } from '../types'
 
 const useStackNavigation = <
   T extends Partial<RootStackParamsList>,
   R extends keyof T,
->() => useNavigation<NativeStackNavigationProp<T, R>>();
+>() => useNavigation<NativeStackNavigationProp<T, R>>()
 
-export { useStackNavigation };
+export { useStackNavigation }

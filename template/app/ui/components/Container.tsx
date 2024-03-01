@@ -1,20 +1,20 @@
-import type { ComponentType, PropsWithChildren, PropsWithRef } from 'react';
-import React from 'react';
-import { ActivityIndicator, StyleSheet } from 'react-native';
+import type { ComponentType, PropsWithChildren, PropsWithRef } from 'react'
+import React from 'react'
+import { ActivityIndicator, StyleSheet } from 'react-native'
 
-import { useColors } from '../hooks/useColors';
+import { useColors } from '../hooks/useColors'
 
 type OwnProps<T> = PropsWithChildren<T> & {
-  component: ComponentType<T>;
-  loading?: boolean;
-};
+  component: ComponentType<T>
+  loading?: boolean
+}
 
 const Container = <T,>({
   component: Component,
   loading,
   ...props
 }: OwnProps<T>) => {
-  const { white, primary } = useColors();
+  const { white, primary } = useColors()
 
   return (
     <Component
@@ -32,10 +32,10 @@ const Container = <T,>({
         props.children
       )}
     </Component>
-  );
-};
+  )
+}
 
-export { Container };
+export { Container }
 
 const styles = StyleSheet.create({
   container: {
@@ -46,4 +46,4 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
   },
-});
+})

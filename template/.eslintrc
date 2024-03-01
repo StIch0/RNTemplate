@@ -14,7 +14,7 @@
       "version": "detect"
     }
   },
-  "extends": ["eslint-config-airbnb/hooks"],
+  "extends": ["eslint-config-airbnb/hooks","@react-native"],
   "plugins": [
     "eslint-plugin-no-inline-styles",
     "@typescript-eslint",
@@ -30,6 +30,7 @@
     "sourceType": "module"
   },
   "rules": {
+    "semi": "off",
     "@typescript-eslint/await-thenable": ["error"],
     "@typescript-eslint/no-extraneous-class": "error",
     "@typescript-eslint/no-misused-new": "error",
@@ -49,11 +50,13 @@
     "react-hooks/exhaustive-deps": "off",
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
-    "react/destructuring-assignment": 0,
+    "prefer-destructuring": ["error", { "object": true }, { "enforceForRenamedProperties": true }],
     "import/no-default-export": "error",
     "import/no-anonymous-default-export": "error",
     "import/prefer-default-export": "off", // default imports is evil
-    "import/default": "error", // enable default import validation
+    "import/default": "error", // enable default import validation,
+    "react/no-unstable-nested-components": 0,
+    "react/react-in-jsx-scope": "off",
     "no-restricted-syntax": [
       "error",
       {

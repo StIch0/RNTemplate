@@ -4487,6 +4487,14 @@ eslint-plugin-ft-flow@^2.0.1:
     lodash "^4.17.21"
     string-natural-compare "^3.0.1"
 
+eslint-plugin-ft-flow@^3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-ft-flow/-/eslint-plugin-ft-flow-3.0.5.tgz#388dbe89466b862f60940aaef3847531f88c13bf"
+  integrity sha512-owZMmncrI6m4+ypPoGRAFZY3SGcJ+9tFSxeR/aTHTXm14/BWVRqVVeg8fc+k8Ljbfv7dhe+FY4ZVBjgLBV/Ndg==
+  dependencies:
+    lodash "^4.17.21"
+    string-natural-compare "^3.0.1"
+
 eslint-plugin-import-order@^2.1.4:
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import-order/-/eslint-plugin-import-order-2.1.4.tgz#8357a395d2d8c3c3f109d8b26c4f618cb52c5243"
@@ -4523,6 +4531,13 @@ eslint-plugin-jest@^26.5.3:
   version "26.9.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-26.9.0.tgz#7931c31000b1c19e57dbfb71bbf71b817d1bf949"
   integrity sha512-TWJxWGp1J628gxh2KhaH1H1paEdgE2J61BBF1I59c6xWeL5+D1BzMxGDN/nXAfX+aSkR5u80K+XhskK6Gwq9ng==
+  dependencies:
+    "@typescript-eslint/utils" "^5.10.0"
+
+eslint-plugin-jest@^27.9.0:
+  version "27.9.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-27.9.0.tgz#7c98a33605e1d8b8442ace092b60e9919730000b"
+  integrity sha512-QIT7FH7fNmd9n4se7FFKHbsLKGQiw885Ds6Y/sxKgCZ6natwCsXdgPOADnYVxN2QrRweF0FZWbJ6S7Rsn7llug==
   dependencies:
     "@typescript-eslint/utils" "^5.10.0"
 

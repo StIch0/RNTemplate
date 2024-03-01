@@ -1,29 +1,29 @@
-import type { NativeStackNavigationOptions } from '@react-navigation/native-stack';
+import type { NativeStackNavigationOptions } from '@react-navigation/native-stack'
 
 type RootStackParamsList = {
-  ExampleScreen: undefined;
-};
+  ExampleScreen: undefined
+}
 
 type HeaderLeft<
   T extends NativeStackNavigationOptions = NativeStackNavigationOptions,
-> = T['headerLeft'];
+> = T['headerLeft']
 
 type HeaderRight<
   T extends NativeStackNavigationOptions = NativeStackNavigationOptions,
-> = T['headerRight'];
+> = T['headerRight']
 
 type HeaderTitleOptions<
   T extends NativeStackNavigationOptions = NativeStackNavigationOptions,
 > = {
-  headerTitleStyle?: T['headerTitleStyle'];
-  headerTitleAlign?: T['headerTitleAlign'];
-};
+  headerTitleStyle?: T['headerTitleStyle']
+  headerTitleAlign?: T['headerTitleAlign']
+}
 
 type HeaderBackTitleOptions<
   T extends NativeStackNavigationOptions = NativeStackNavigationOptions,
 > = {
-  headerTitleStyle?: T['headerBackTitleStyle'];
-};
+  headerTitleStyle?: T['headerBackTitleStyle']
+}
 
 export type {
   RootStackParamsList,
@@ -31,4 +31,4 @@ export type {
   HeaderRight,
   HeaderTitleOptions,
   HeaderBackTitleOptions,
-};
+}

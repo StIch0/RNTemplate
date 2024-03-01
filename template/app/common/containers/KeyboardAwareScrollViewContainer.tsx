@@ -1,11 +1,11 @@
-import { StyleSheet } from 'react-native';
-import type { KeyboardAwareScrollViewProps } from 'react-native-keyboard-aware-scroll-view';
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
+import { StyleSheet } from 'react-native'
+import type { KeyboardAwareScrollViewProps } from 'react-native-keyboard-aware-scroll-view'
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 
-import { Container } from '@app/ui/components/Container';
+import { Container } from '@app/ui/components/Container'
 
 type OwnProps = KeyboardAwareScrollViewProps &
-  Omit<Parameters<typeof Container>[0], 'component'>;
+  Omit<Parameters<typeof Container>[0], 'component'>
 
 const KeyboardAwareScrollViewContainer = (props: OwnProps) => {
   return (
@@ -20,10 +20,10 @@ const KeyboardAwareScrollViewContainer = (props: OwnProps) => {
       contentContainerStyle={styles.contentContainerStyle}
       {...props}
     />
-  );
-};
+  )
+}
 
-export { KeyboardAwareScrollViewContainer };
+export { KeyboardAwareScrollViewContainer }
 
 const styles = StyleSheet.create({
   contentContainerStyle: {
@@ -31,4 +31,4 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     paddingBottom: 20,
   },
-});
+})

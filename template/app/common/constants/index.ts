@@ -1,4 +1,4 @@
-import type { MockDataItem } from '@app/store/example/types';
+import type { MockDataItem } from '@app/store/example/types'
 
 const mockText: string[] = [
   '“Магии не место в науке” - не используй магические константы',
@@ -15,7 +15,7 @@ const mockText: string[] = [
   '“Я буду долго гнать велосипед” - не усложняй простое решение. Следуй принципу KISS',
   '“У нас тут правочки подъехали” - делай решение задачи  расширяемым',
   '“Can’t catch this” - обрабатывай исключения',
-];
+]
 
 const mockList: MockDataItem[] = Array.from(
   { length: mockText.length },
@@ -24,6 +24,6 @@ const mockList: MockDataItem[] = Array.from(
     completed: k % 2 === 0,
     text: mockText[k],
   }),
-);
+)
 
-export { mockList };
+export { mockList }

@@ -1,16 +1,16 @@
-import React from 'react';
-import type { ActivityIndicatorProps } from 'react-native';
-import { ActivityIndicator, StyleSheet } from 'react-native';
+import React from 'react'
+import type { ActivityIndicatorProps } from 'react-native'
+import { ActivityIndicator, StyleSheet } from 'react-native'
 
-type OwnProps = ActivityIndicatorProps;
+type OwnProps = ActivityIndicatorProps
 
 const Spinner = (props: OwnProps) => {
   return (
     <ActivityIndicator {...props} style={[styles.container, props.style]} />
-  );
-};
+  )
+}
 
-export { Spinner };
+export { Spinner }
 
 const styles = StyleSheet.create({
   container: {
@@ -19,4 +19,4 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%',
   },
-});
+})

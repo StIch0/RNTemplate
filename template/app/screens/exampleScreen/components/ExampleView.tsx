@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-import { ScrollContainer } from '@app/common/containers/ScrollContainer';
+import { ScrollContainer } from '@app/common/containers/ScrollContainer'
 
 const ExampleView = () => {
-  return <ScrollContainer />;
-};
+  return <ScrollContainer />
+}
 
-export { ExampleView };
+export { ExampleView }

@@ -6,56 +6,56 @@ import type {
   SliceCaseReducers,
   ThunkDispatch,
   Tuple,
-} from '@reduxjs/toolkit';
-import type { ThunkMiddlewareFor } from '@reduxjs/toolkit/dist/getDefaultMiddleware';
-import type { PersistPartial } from 'redux-persist/lib/persistReducer';
+} from '@reduxjs/toolkit'
+import type { ThunkMiddlewareFor } from '@reduxjs/toolkit/dist/getDefaultMiddleware'
+import type { PersistPartial } from 'redux-persist/lib/persistReducer'
 
-import type { exampleServices } from '@app/services/example';
+import type { exampleServices } from '@app/services/example'
 
-import type { ListState } from '../example/types';
-import type { ThemeState } from '../theme/types';
+import type { ListState } from '../example/types'
+import type { ThemeState } from '../theme/types'
 
-type PayloadAction<T> = ReduxPayloadAction<T>;
+type PayloadAction<T> = ReduxPayloadAction<T>
 
-type SliceReducer<T> = SliceCaseReducers<T>;
+type SliceReducer<T> = SliceCaseReducers<T>
 
 type Dependencies = {
-  exampleServices: typeof exampleServices;
-};
+  exampleServices: typeof exampleServices
+}
 
 type RootState = {
-  list: ListState;
-  theme: ThemeState;
-} & PersistPartial;
+  list: ListState
+  theme: ThemeState
+} & PersistPartial
 
-type AppDispatch = Dispatch & ThunkDispatch<RootState, Dependencies, AnyAction>;
+type AppDispatch = Dispatch & ThunkDispatch<RootState, Dependencies, AnyAction>
 
 type ThunkAsyncConfig = {
-  extra: Dependencies;
-  state: RootState;
-  dispatch: AppDispatch;
-};
+  extra: Dependencies
+  state: RootState
+  dispatch: AppDispatch
+}
 
 type ThunkMiddlewareOptions = {
   thunk: {
-    extraArgument: Dependencies;
-  };
-};
+    extraArgument: Dependencies
+  }
+}
 
 type Middlewares = Tuple<
   ThunkMiddlewareFor<RootState, ThunkMiddlewareOptions>[]
->;
+>
 
-type MainState = Omit<RootState, '_persist'>;
+type MainState = Omit<RootState, '_persist'>
 
-type Reducers = { [K in keyof MainState]: Reducer<MainState[K], AnyAction> };
+type Reducers = { [K in keyof MainState]: Reducer<MainState[K], AnyAction> }
 
 enum SlicesName {
   LIST = 'LIST',
   THEME = 'THEME',
 }
 
-export { SlicesName };
+export { SlicesName }
 export type {
   ThunkAsyncConfig,
   SliceReducer,
@@ -66,4 +66,4 @@ export type {
   Reducers,
   ThunkMiddlewareOptions,
   AppDispatch,
-};
+}

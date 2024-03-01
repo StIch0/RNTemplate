@@ -1,8 +1,8 @@
-import React from 'react';
-import { ScrollView } from 'react-native';
+import React from 'react'
+import { ScrollView } from 'react-native'
 
-import { Container } from '@app/ui/components/Container';
-import { Text } from '@app/ui/components/Text';
+import { Container } from '@app/ui/components/Container'
+import { Text } from '@app/ui/components/Text'
 
 const WIPComponent = () => {
   return (
@@ -11,7 +11,7 @@ const WIPComponent = () => {
         RNTemplate
       </Text>
     </Container>
-  );
-};
+  )
+}
 
-export { WIPComponent };
+export { WIPComponent }

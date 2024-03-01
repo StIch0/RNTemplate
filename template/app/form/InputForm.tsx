@@ -1,16 +1,16 @@
-import type { FieldValues } from 'react-hook-form';
-import { useController } from 'react-hook-form';
+import type { FieldValues } from 'react-hook-form'
+import { useController } from 'react-hook-form'
 
-import { Input } from '@app/ui/components/Input';
+import { Input } from '@app/ui/components/Input'
 
-import type { UseControllerParams } from './types';
+import type { UseControllerParams } from './types'
 
 type InputParams = Omit<
   Parameters<typeof Input>[0],
   'value' | 'onChangeText' | 'onChange' | 'defaultValue'
->;
+>
 
-type OwnProps<T extends FieldValues> = UseControllerParams<T> & InputParams;
+type OwnProps<T extends FieldValues> = UseControllerParams<T> & InputParams
 
 const InputForm = <T extends FieldValues>({
   name,
@@ -30,9 +30,9 @@ const InputForm = <T extends FieldValues>({
     disabled,
     rules,
     shouldUnregister,
-  });
+  })
 
-  return <Input {...props} value={value} onChangeText={onChange} />;
-};
+  return <Input {...props} value={value} onChangeText={onChange} />
+}
 
-export { InputForm };
+export { InputForm }

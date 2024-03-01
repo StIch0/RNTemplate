@@ -1,3 +1,3 @@
-type Merge<T> = { [K in keyof T]: T[K] };
+type Merge<T> = { [K in keyof T]: T[K] }
 
-export type { Merge };
+export type { Merge }

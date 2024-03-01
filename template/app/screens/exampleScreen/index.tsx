@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-import { ExampleView } from './components/ExampleView';
+import { ExampleView } from './components/ExampleView'
 
 const ExampleScreen = () => {
-  return <ExampleView />;
-};
+  return <ExampleView />
+}
 
-export { ExampleScreen };
+export { ExampleScreen }

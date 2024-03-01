@@ -1,7 +1,7 @@
-import type { ColorSchemeName } from 'react-native';
+import type { ColorSchemeName } from 'react-native'
 
 type ThemeState = {
-  colorScheme: ColorSchemeName;
-};
+  colorScheme: ColorSchemeName
+}
 
-export { ThemeState };
+export { ThemeState }

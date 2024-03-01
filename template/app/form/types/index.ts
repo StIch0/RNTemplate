@@ -1,7 +1,7 @@
-import type { FieldValues, useController } from 'react-hook-form';
+import type { FieldValues, useController } from 'react-hook-form'
 
 type UseControllerParams<T extends FieldValues> = Parameters<
   typeof useController<T>
->[0];
+>[0]
 
-export { UseControllerParams };
+export { UseControllerParams }

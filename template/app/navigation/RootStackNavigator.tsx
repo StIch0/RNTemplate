@@ -1,25 +1,25 @@
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import React from 'react';
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import React from 'react'
 
-import { useColorScheme } from '@app/common/hooks/useColorScheme';
-import { ExampleScreen } from '@app/screens/exampleScreen';
-import { useColors } from '@app/ui/hooks/useColors';
+import { useColorScheme } from '@app/common/hooks/useColorScheme'
+import { ExampleScreen } from '@app/screens/exampleScreen'
+import { useColors } from '@app/ui/hooks/useColors'
 
-import type { RootStackParamsList } from './types';
+import type { RootStackParamsList } from './types'
 
-const RootStack = createNativeStackNavigator<RootStackParamsList>();
+const RootStack = createNativeStackNavigator<RootStackParamsList>()
 
 const RootStackNavigator = () => {
-  const { black } = useColors();
+  const { black } = useColors()
 
   const exampleScreenOption = {
     title: 'RNTemplate',
     headerTitleStyle: {
       color: black,
     },
-  };
+  }
 
-  useColorScheme();
+  useColorScheme()
 
   return (
     <RootStack.Navigator>
@@ -29,7 +29,7 @@ const RootStackNavigator = () => {
         options={exampleScreenOption}
       />
     </RootStack.Navigator>
-  );
-};
+  )
+}
 
-export { RootStackNavigator };
+export { RootStackNavigator }

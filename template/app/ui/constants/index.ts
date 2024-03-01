@@ -1,4 +1,4 @@
-import type { Font } from '@app/ui/types';
+import type { Font } from '@app/ui/types'
 
 const font: Font = {
   thin: {
@@ -29,13 +29,13 @@ const font: Font = {
     fontFamily: 'Roboto-Black',
     fontWeight: '900',
   },
-};
+}
 
 const colorScheme = {
   primary: '#ABFEBF',
   secondary: '#AAFFEE',
   black: '#000000',
   white: '#FFFFFF',
-};
+}
 
-export { font, colorScheme };
+export { font, colorScheme }

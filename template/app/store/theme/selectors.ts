@@ -1,6 +1,6 @@
-import { useAppSelector } from '../hooks';
+import { useAppSelector } from '../hooks'
 
 const useColorsScheme = () =>
-  useAppSelector(({ theme: { colorScheme } }) => colorScheme);
+  useAppSelector(({ theme: { colorScheme } }) => colorScheme)
 
-export { useColorsScheme };
+export { useColorsScheme }

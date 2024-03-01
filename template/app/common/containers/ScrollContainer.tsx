@@ -1,10 +1,10 @@
-import type { ScrollViewProps } from 'react-native';
-import { ScrollView, StyleSheet } from 'react-native';
+import type { ScrollViewProps } from 'react-native'
+import { ScrollView, StyleSheet } from 'react-native'
 
-import { Container } from '@app/ui/components/Container';
+import { Container } from '@app/ui/components/Container'
 
 type OwnProps = ScrollViewProps &
-  Omit<Parameters<typeof Container>[0], 'component'>;
+  Omit<Parameters<typeof Container>[0], 'component'>
 
 const ScrollContainer = ({ ...props }: OwnProps) => {
   return (
@@ -14,10 +14,10 @@ const ScrollContainer = ({ ...props }: OwnProps) => {
       {...props}
       keyboardShouldPersistTaps="handled"
     />
-  );
-};
+  )
+}
 
-export { ScrollContainer };
+export { ScrollContainer }
 
 const styles = StyleSheet.create({
   contentContainerStyle: {
@@ -27,4 +27,4 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     paddingVertical: 20,
   },
-});
+})

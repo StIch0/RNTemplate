@@ -1,7 +1,7 @@
-import { createAsyncThunk } from '../helpers/createAsyncThunk';
-import { SlicesName } from '../types';
+import { createAsyncThunk } from '../helpers/createAsyncThunk'
+import { SlicesName } from '../types'
 
-import type { MockDataItem } from './types';
+import type { MockDataItem } from './types'
 
 const getSuggestionsAction = createAsyncThunk<MockDataItem[]>(
   `${SlicesName.LIST}/getSuggestionsAction`,
@@ -14,12 +14,12 @@ const getSuggestionsAction = createAsyncThunk<MockDataItem[]>(
     },
   ) => {
     try {
-      const list = await getSomeData();
-      return list;
+      const list = await getSomeData()
+      return list
     } catch (error) {
-      return Promise.reject(error);
+      return Promise.reject(error)
     }
   },
-);
+)
 
-export { getSuggestionsAction };
+export { getSuggestionsAction }

@@ -1,4 +1,4 @@
-import type { TextProps as RNTextProps, TextStyle } from 'react-native';
+import type { TextProps as RNTextProps, TextStyle } from 'react-native'
 
 type FontWeight =
   | 'bold'
@@ -7,14 +7,14 @@ type FontWeight =
   | 'thin'
   | 'light'
   | 'regular'
-  | 'black';
+  | 'black'
 
 type Font = {
   [weight in FontWeight]: {
-    fontFamily: FontFamily;
-    fontWeight: TextStyle['fontWeight'];
-  };
-};
+    fontFamily: FontFamily
+    fontWeight: TextStyle['fontWeight']
+  }
+}
 
 type FontFamily =
   | 'Roboto-Thin'
@@ -23,13 +23,13 @@ type FontFamily =
   | 'Roboto-Bold'
   | 'Roboto'
   | 'Roboto-Regular'
-  | 'Roboto-Black';
+  | 'Roboto-Black'
 
 interface TextProps
   extends RNTextProps,
     Omit<TextStyle, 'fontWeight' | 'fontSize'> {
-  fontSize: number;
-  fontWeight: FontWeight;
+  fontSize: number
+  fontWeight: FontWeight
 }
 
-export type { FontWeight, Font, FontFamily, TextProps };
+export type { FontWeight, Font, FontFamily, TextProps }
